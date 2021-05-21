@@ -1,0 +1,25 @@
+Update for 21st May
+
+1. Introduction to powershell
+2. Powershell Basics
+
+
+Basic Cmdlets (verb-noun)
+
+Start-Transcript
+Get- Command
+get-command -Noun service
+get-service
+get-help Get-service
+get-help Get-service -Examples
+het-help Get-service -Online
+get-alias 
+
+Other resources
+
+https://www.youtube.com/watch?v=IHrGresKu2w&list=PLCGGtLsUjhm2k22nFHHdupAK0hSNZVfXi
+
+https://www.youtube.com/watch?v=f9xPJXslVWE&t=0s
+
+https://app.pluralsight.com/course-player?clipId=92191f0f-0e66-4460-8f5c-33474659406c
+
