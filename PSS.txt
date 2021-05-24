@@ -23,3 +23,76 @@ https://www.youtube.com/watch?v=f9xPJXslVWE&t=0s
 
 https://app.pluralsight.com/course-player?clipId=92191f0f-0e66-4460-8f5c-33474659406c
 
+Update for 24th May
+
+
+1. Overview
+- Basic commands in Powershell
+- Gathering information
+- Powershell with remote computers
+- Building a basic script
+2. Introduction to Powershell
+- What is Powershell
+- Windows Powershell and Powershell core
+- Installation and imporatance of Powershell
+- Demo: Using Powershell to report on stopped server services
+3. PowerShell Basics
+-Command Basics
+-Demo: Exploring PowerShell Verbs
+-Demo: Working with Aliases and Parameters
+-3 Important Commands
+-Demo: Finding Answers in the PowerShell Console
+-Demo: Researching Commands with Get-Command
+-Demo: Documenting Your Work in the PowerShell Console
+-Objects in PowerShell
+
+
+Cmdlets
+
+-(get-commands).count
+"gives total number of commands"
+
+-get-verb | more
+"to het the list of verbs in powershell"
+
+-Get-Services    
+"to get all started and stopped services that are running in our system"
+
+get-services | Where-Object Status -eq 'Stopped'
+"brings all stopped services running in the system"
+
+-get-services | Where-Object Status -eq 'Stopped' | Select-Object Name,Status
+"get all stopped services with tags only names and status"
+
+-$data = get-services | Where-Object Status -eq 'Stopped' | Select-Object Name,Status
+"saved to new variable $data"
+
+-$data | out-file .\<filename>
+"piping all data in variables to a file"
+
+-notepad .\<filename>
+"get all contents of file in notepad"
+
+-$data | export-csv .\<filename>
+-get-content .\<filename> | more
+"to view contents in console"
+
+-$PSVersionTable
+"displays version of Poweshell"
+
+-update-help
+"download all help commands"
+
+-Get-Command -Name *Ip*
+"command that allow to work with IP address"
+
+Other resources
+
+https://app.pluralsight.com/course-player?clipId=c00272a4-deb7-4b1f-936c-5b9b19a29aa6
+
+
+
+
+
+
+
